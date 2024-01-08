@@ -1,0 +1,12 @@
+
+
+<ng-container>
+  <button *ngFor="let s of seats"
+          class="btn"
+          class="{{getBtnClass(s)}}"
+          [class.taken]="isSeatTaken(s)"
+          (click)="selectSeat(s)"
+          [disabled]="s.isTaken">
+    <span class="button-text">{{ s.number }}</span>
+  </button>
+</ng-container>

@@ -1,0 +1,13 @@
+<div class="resa_container">
+  <app-price-section></app-price-section>
+  <div class="mt-5">
+    <div class="row ml-2">
+      <h2>S'il vous plait, sélectionner les places que vous souhaitez réserver</h2>
+    </div>
+    <app-place-section></app-place-section>
+  </div>
+  <mat-dialog-actions align="end">
+    <a mat-flat-button  mat-dialog-close>Cancel</a>
+    <button mat-flat-button color="primary" [mat-dialog-close]="true" (click)="confirmPurchase()" cdkFocusInitial>Confirm</button>
+  </mat-dialog-actions>
+</div>

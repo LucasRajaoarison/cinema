@@ -1,0 +1,43 @@
+<div class="col-md-12">
+<div class="anime__details__text">
+  <div class="anime__details__title">
+    <h3>{{movie?.title}}</h3>
+    <ng-container *ngIf="movie?.tagline">
+      <span>{{movie?.tagline}}</span>
+    </ng-container>
+  </div>
+  <div class="anime__details__rating">
+    <div class="rating">
+      <a href="#"><i class="fa fa-star"></i></a>
+      <a href="#"><i class="fa fa-star"></i></a>
+      <a href="#"><i class="fa fa-star"></i></a>
+      <a href="#"><i class="fa fa-star"></i></a>
+      <a href="#"><i class="fa fa-star-half-o"></i></a>
+    </div>
+    <span>1.029 Votes</span>
+  </div>
+  <p>{{movie?.overview}}</p>
+  <div class="anime__details__widget">
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <ul>
+          <li><span>Date aired:</span> {{movie?.release_date}}</li>
+          <li><span>Status:</span> Airing</li>
+          <li>
+            <span>Genre:</span>
+            <ng-container *ngFor="let genre of movie?.genres">
+              {{genre?.name}}
+            </ng-container>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="anime__details__btn">
+    <!--              <a href="#" class="follow-btn"><i class="fa fa-heart-o"></i> Follow</a>-->
+    <a class="watch-btn" (click)="openDialog()"><span>Reserve now</span>
+      <i class="fa fa-angle-right"></i>
+    </a>
+  </div>
+</div>
+</div>

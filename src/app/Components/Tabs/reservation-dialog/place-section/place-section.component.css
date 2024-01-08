@@ -1,0 +1,34 @@
+.mat-focus-indicator {
+  outline: none !important;
+}
+
+
+
+button.btn {
+  outline: none !important;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 5px;
+  position: relative; /* Ajout de la position relative pour le positionnement absolu du texte */
+  border: none;
+}
+
+.custom_color {
+  background-color: #55aaff !important;
+  color: black !important;
+}
+
+.button-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*.taken {*/
+/*  background-color: red !important;*/
+/*  color: white !important;*/
+/*  cursor: not-allowed;*/
+/*}*/
+

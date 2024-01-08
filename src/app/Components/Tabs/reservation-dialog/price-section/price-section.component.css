@@ -1,0 +1,38 @@
+.card {
+  width: auto;
+  background-color: rgb(199, 220, 233);
+}
+
+.custom_data {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.custom_icon {
+  font-size: 3.5em;
+  color: #198754;
+}
+
+.custom_price {
+  display: flex;
+  align-items: flex-end;
+}
+
+.price_section {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.dollar {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #dc3545;
+}
+
+.amount {
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 5px;
+  color: #dc3545;
+}
